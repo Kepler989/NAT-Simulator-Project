@@ -1285,7 +1285,7 @@
             if (natTable.length > 0) {
                 docContent += `ACTIVE NAT TRANSLATION TABLE\n`;
                 docContent += `${'='.repeat(80)}\n`;
-                docContent += `Type     Private IP        Port   Public IP         Port   Destination          Timeout\n`;
+                docContent += `Type       Private IP       Port   Public IP         Port   Destination          Timeout\n`;
                 docContent += `${'-'.repeat(80)}\n`;
                 
                 for (const entry of natTable) {
@@ -1306,7 +1306,7 @@
             if (Object.keys(destinationStats).length > 0) {
                 docContent += `DESTINATION IP STATISTICS\n`;
                 docContent += `${'='.repeat(80)}\n`;
-                docContent += `Destination IP       Packets Sent\n`;
+                docContent += `Destination IP        Packets Sent\n`;
                 docContent += `${'-'.repeat(80)}\n`;
                 
                 const destinations = Object.entries(destinationStats).sort((a, b) => b[1] - a[1]);
